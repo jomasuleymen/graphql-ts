@@ -107,7 +107,10 @@ class RecipeResolver {
 }
 
 const schema = buildSchemaSync({
-	resolvers: [RecipeResolver]
+	resolvers: [RecipeResolver],
+	validate: {
+		forbidUnknownValues: false
+	}
 });
 
 const data: OptionsData = {

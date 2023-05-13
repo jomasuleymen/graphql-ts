@@ -1,12 +1,12 @@
 import "reflect-metadata";
 
 import express from "express";
-
-import data from "./schemes/graphql-js/data";
-// import data from "./schemes/type-graphql/data";
 import { ApolloServer } from "@apollo/server";
 import { expressMiddleware } from "@apollo/server/express4";
 import cors from "cors";
+
+// import data from "./schemes/graphql-js/data";
+import data from "./schemes/type-graphql/data";
 
 interface GraphQLContext {
 	token?: String;
