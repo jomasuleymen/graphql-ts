@@ -149,5 +149,6 @@ export type QueryResolvers<ContextType = any, ParentType extends ResolversParent
 export type Resolvers<ContextType = any> = {
   Author?: AuthorResolvers<ContextType>;
   Post?: PostResolvers<ContextType>;
-  Query: QueryResolvers<ContextType>;
+  Query?: QueryResolvers<ContextType>;
 };
+
